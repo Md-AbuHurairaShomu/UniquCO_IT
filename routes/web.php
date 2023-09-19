@@ -17,3 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 route::get('/dashboard',[HomeController::class, 'index'])->name('admin.home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
