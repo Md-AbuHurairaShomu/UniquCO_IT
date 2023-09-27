@@ -14,7 +14,7 @@ use App\Http\Controllers\Admin\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.index');
 });
 route::get('/dashboard',[HomeController::class, 'index'])->name('admin.home');
 
